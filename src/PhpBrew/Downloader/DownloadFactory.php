@@ -14,9 +14,9 @@ class DownloadFactory
     const METHOD_CURL = 'curl';
 
     private static $availableDownloaders = array(
+        self::METHOD_WGET => 'PhpBrew\Downloader\WgetCommandDownloader',
         self::METHOD_PHP_CURL => 'PhpBrew\Downloader\PhpCurlDownloader',
         self::METHOD_PHP_STREAM => 'PhpBrew\Downloader\PhpStreamDownloader',
-        self::METHOD_WGET => 'PhpBrew\Downloader\WgetCommandDownloader',
         self::METHOD_CURL => 'PhpBrew\Downloader\CurlCommandDownloader',
     );
 
